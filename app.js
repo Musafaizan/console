@@ -18,7 +18,7 @@ getUsers(async (err, users) => {
       const tasks = await   getUserTasks(user.id);
       console.log(`Tasks  for ${user.name}:`, tasks);
 
-      // Sequential
+      // Sequential   
       console.log("Sequential processing:");
       for (const task of tasks) {
         try {
